@@ -35,7 +35,7 @@
     });
     var Esri_WorldShadedRelief = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri',
-        maxZoom: 20
+        maxZoom: 20 // can change max/min zoom
     });
    
 
@@ -61,7 +61,7 @@
         }).addTo(map);
 
     var baseMaps = {
-    "OSM": OSM,
+    "OSM": OSM, //"OSM" is variable name; can call whatever
     "ESRI Imagery": Esri_WorldImagery,
     "Topography": Esri_WorldShadedRelief
     };
